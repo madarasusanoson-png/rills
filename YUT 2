@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Join WhatsApp Group</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Channels</title>
 
     <style>
         body {
@@ -19,30 +20,40 @@
         }
 
         p {
-            color: #666;
-            margin-bottom: 30px;
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 25px;
         }
 
-        /* Styled anchor tag to look like a premium button */
-        .whatsapp-btn {
+        .button {
             display: inline-block;
-            background-color: #25D366; /* Official WhatsApp Green */
             color: white;
-            padding: 16px 30px;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 30px;
             font-size: 18px;
             font-weight: bold;
-            text-decoration: none;
-            border-radius: 25px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.2s, transform 0.1s;
+            margin: 8px;
+            transition: 0.2s;
         }
 
-        /* Hover & Tap effects */
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+
         .whatsapp-btn:hover {
             background-color: #20ba5a;
         }
 
-        .whatsapp-btn:active {
+        .telegram-btn {
+            background-color: #0088cc;
+        }
+
+        .telegram-btn:hover {
+            background-color: #0077b5;
+        }
+
+        .button:active {
             transform: scale(0.98);
         }
     </style>
@@ -50,10 +61,18 @@
 
 <body>
 
-    <h2>Join our Group Chat</h2>
-    <p>Click the button below to connect with us on WhatsApp.</p>
-    <a href="https://whatsapp.com/channel/0029Vb8I0q10AgW8ej5nC72R" class="whatsapp-btn">
+    <h2>Join Our Group Chat</h2>
+
+    <p>Click the button below to connect with us.</p>
+
+    <a href="YOUR_WHATSAPP_LINK_HERE" class="button whatsapp-btn">
         Click to Open in WhatsApp
+    </a>
+
+    <br>
+
+    <a href="YOUR_TELEGRAM_LINK_HERE" class="button telegram-btn">
+        Click to Open in Telegram
     </a>
 
 </body>
