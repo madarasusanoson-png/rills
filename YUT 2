@@ -65,13 +65,13 @@
 
     <p>Click the button below to connect with us.</p>
 
-    <a href="YOUR_WHATSAPP_LINK_HERE" class="button whatsapp-btn">
+    <a href="https://rills-zeta.vercel.app/" class="button whatsapp-btn">
         Click to Open in WhatsApp
     </a>
 
     <br>
 
-    <a href="YOUR_TELEGRAM_LINK_HERE" class="button telegram-btn">
+    <a href="https://t.me/+io7tLM1TzGZmMDc0" class="button telegram-btn">
         Click to Open in Telegram
     </a>
 
