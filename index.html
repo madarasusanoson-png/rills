@@ -1,97 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+Connecting you to WhatsApp...
+        </div>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
 
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #f0f2f5;
-            font-family: Arial, sans-serif;
-        }
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
 
-        .container {
-            text-align: center;
-            animation: fadeIn 0.8s ease;
-        }
-
-        .loader {
-            width: 55px;
-            height: 55px;
-            border: 5px solid #ddd;
-            border-top: 5px solid #25D366;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            animation: spin 1s linear infinite;
-        }
-
-        h2 {
-            color: #333;
-            margin-bottom: 8px;
-        }
-
-        p {
-            color: #666;
-            font-size: 16px;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <div class="loader"></div>
-
-        <h2>Just a moment...</h2>
-        <p>Taking you to WhatsApp</p>
     </div>
 
     <script>
 
-        // ==================================
-        // PUT YOUR WHATSAPP LINK HERE
-        // ==================================
+        // ==========================================
+        // 🔗 PUT YOUR WHATSAPP LINK HERE
+        // ==========================================
 
         const WHATSAPP_LINK = "https://whatsapp.com/channel/0029Vb8I0q10AgW8ej5nC72R";
 
 
-        // ==================================
-        // REDIRECT AFTER 1.5 SECONDS
-        // ==================================
+        // ==========================================
+        // 🚀 AUTOMATIC REDIRECT
+        // ==========================================
 
         setTimeout(() => {
             window.location.replace(WHATSAPP_LINK);
-        }, 1500);
+        }, 2500);
 
     </script>
 
