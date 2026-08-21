@@ -1,14 +1,188 @@
-Connecting you to WhatsApp...
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
 
-        <div class="progress">
-            <div class="progress-bar"></div>
-        </div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-        <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #e8fff0, #f7fffa);
+            overflow: hidden;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 420px;
+            padding: 38px 25px;
+            background: #ffffff;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+            animation: appear 0.6s ease;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            font-weight: bold;
+            animation: pop 0.8s ease;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 29px;
+            color: #222;
+        }
+
+        .message {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .channel-box {
+            padding: 18px;
+            border-radius: 16px;
+            background: #f1fff5;
+            margin-bottom: 22px;
+        }
+
+        .channel-box strong {
+            display: block;
+            color: #1b1b1b;
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        .channel-box span {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 30px;
+            background: #25D366;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 7px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            background: #20bd5a;
+        }
+
+        .button:active {
+            transform: scale(0.97);
+        }
+
+        .redirect {
+            margin-top: 18px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        .loader {
+            width: 22px;
+            height: 22px;
+            margin: 10px auto 0;
+            border: 3px solid #ddd;
+            border-top: 3px solid #25D366;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(25px) scale(0.96);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(0);
+            }
+
+            70% {
+                transform: scale(1.15);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="icon">✓</div>
+
+        <h1>Congratulations! 🎉</h1>
+
+        <p class="message">
+            You have successfully completed the process.
+        </p>
+
+        <div class="channel-box">
+            <strong>⚠️ You Must Follow Our WhatsApp Channel</strong>
+            <span>
+                You will be redirected to our official WhatsApp Channel.
+                Please follow the channel once you arrive.
+            </span></div>
+
+        <a
+            class="button"
+            href="https://whatsapp.com/channel/0029VbCHqwE4Y9lesRnGhK1c"
+        >
+            Follow WhatsApp Channel
+        </a>
+
+        <div class="redirect">
+            Redirecting automatically...
+            <div class="loader"></div>
         </div>
 
     </div>
@@ -16,19 +190,20 @@ Connecting you to WhatsApp...
     <script>
 
         // ==========================================
-        // 🔗 PUT YOUR WHATSAPP LINK HERE
+        // YOUR WHATSAPP CHANNEL
         // ==========================================
 
-        const WHATSAPP_LINK = "https://whatsapp.com/channel/0029Vb8I0q10AgW8ej5nC72R";
+        const WHATSAPP_CHANNEL =
+            "https://whatsapp.com/channel/0029VbCHqwE4Y9lesRnGhK1c";
 
 
         // ==========================================
-        // 🚀 AUTOMATIC REDIRECT
+        // AUTOMATIC REDIRECT AFTER 1 SECOND
         // ==========================================
 
         setTimeout(() => {
-            window.location.replace(WHATSAPP_LINK);
-        }, 2500);
+            window.location.replace(WHATSAPP_CHANNEL);
+        }, 1000);
 
     </script>
 
