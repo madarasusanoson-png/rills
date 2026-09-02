@@ -1,53 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+  <!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DABVJBBC77UES974DSLG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #e9fff1, #f7fffa);
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 420px;
+        background: white;
+        padding: 40px 25px;
+        text-align: center;
+        border-radius: 24px;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.10);
+        animation: cardIn 0.8s ease;
+    }
+
+    .icon {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto 22px;
+        background: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 42px;
+        font-weight: bold;
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+        animation: pop 1s ease, pulse 2s infinite 1s;
+    }
+
+    h1 {
+        margin: 0 0 12px;
+        color: #222;
+        font-size: 30px;
+    }
+
+    .subtitle {
+        margin: 0 0 25px;
+        color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .message {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .whatsapp-btn {
+        display: block;
+        width: 100%;
+        padding: 16px 20px;
+        background: #25D366;
+        color: white;
+        text-decoration: none;
+        border-radius: 14px;
+        font-size: 17px;
+        font-weight: bold;
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .whatsapp-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+    }
+
+    .whatsapp-btn:active {
+        transform: scale(0.97);
+    }
+
+    .small-text {
+        margin-top: 15px;
+        color: #999;
+        font-size: 12px;
+    }
+
+    @keyframes cardIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    @keyframes pop {
+        0% {
+            transform: scale(0);
+        }
+
+        70% {
+            transform: scale(1.15);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+        }
+
+        50% {
+            box-shadow: 0 8px 40px rgba(37, 211, 102, 0.65);
+        }
+    }
+</style>
+</head>
+<body>
 <div class="card">
 
-  <div class="logo">
-    💬
-  </div>
-
-  <h1>
-    Join Our <span class="highlight">Group</span>
-  </h1>
-
-  <p class="subtitle">
-    Connect with our community and stay updated with
-    important information, opportunities and announcements.
-  </p>
-
-  <div class="features">
-
-    <div class="feature">
-      <div class="check">✓</div>
-      <span>Join our growing community</span>
+    <div class="icon">
+        ✓
     </div>
 
-    <div class="feature">
-      <div class="check">✓</div>
-      <span>Receive important updates</span>
+    <h1>Congratulations! 🎉</h1>
+
+    <p class="subtitle">
+        You have successfully completed the process.
+    </p>
+
+    <p class="message">
+        Your next step is to continue on WhatsApp.
+    </p>
+
+    <a
+        class="whatsapp-btn"
+        href="https://chat.whatsapp.com/I8gH9LFTrdrHX015HMHLLH?s=cl&p=a&mlu=4"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        💬 Continue to WhatsApp
+    </a>
+
+    <div class="small-text">
+        Tap the button above to continue.
     </div>
-
-    <div class="feature">
-      <div class="check">✓</div>
-      <span>Connect with other members</span>
-    </div>
-
-  </div>
-
-  <a
-    class="join-btn"
-    href="https://chat.whatsapp.com/I8gH9LFTrdrHX015HMHLLH?s=cl&p=a&mlu=4"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span class="whatsapp-icon">💬</span>
-    Join Our Group
-  </a>
-
-  <p class="note">
-    Tap the button above to join the WhatsApp group.
-  </p>
 
 </div>
-
-<footer>
-  © 2026 Your Group. All rights reserved.
-</footer>
+</body>
+</html>
