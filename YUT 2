@@ -1,79 +1,419 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Channels</title>
+<title>Welcome to WhatsApp</title>
 
-    <style>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+        padding: 42px 28px 35px;
+        background: #ffffff;
+        border-radius: 25px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.09);
+        animation: cardIn 0.8s ease forwards;
+    }
+
+    /* WhatsApp icon */
+
+    .icon-wrapper {
+        position: relative;
+        width: 92px;
+        height: 92px;
+        margin: 0 auto 24px;
+    }
+
+    .icon {
+        width: 92px;
+        height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #25D366;
+        color: white;
+
+        border-radius: 50%;
+        font-size: 43px;
+
+        box-shadow:
+            0 10px 30px rgba(37, 211, 102, 0.30);
+
+        animation:
+            iconPop 0.8s ease,
+            pulse 2s ease-in-out infinite 1s;
+    }
+
+    .ring {
+        position: absolute;
+        inset: -7px;
+        border: 2px solid rgba(37, 211, 102, 0.25);
+        border-radius: 50%;
+        animation: ring 2s ease-out infinite;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+        color: #202020;
+    }
+
+    .highlight {
+        color: #25D366;
+    }
+
+    .subtitle {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 27px;
+    }
+
+    /* Features */
+
+    .features {
+        text-align: left;
+        margin-bottom: 27px;
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        padding: 10px 0;
+
+        color: #444;
+        font-size: 14px;
+
+        opacity: 0;
+        animation: slideIn 0.6s ease forwards;
+    }
+
+    .feature:nth-child(1) {
+        animation-delay: 0.35s;
+    }
+
+    .feature:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    .feature:nth-child(3) {
+        animation-delay: 0.65s;
+    }
+
+    .check {
+        width: 27px;
+        height: 27px;
+        min-width: 27px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #eafff1;
+        color: #25D366;
+
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    /* Redirect message */
+
+    .redirect-box {
+        margin-top: 8px;
+    }
+
+    .redirect-text {
+        color: #25D366;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 11px;
+    }
+
+    .progress {
+        width: 100%;
+        height: 7px;
+        background: #eeeeee;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        background: #25D366;
+        border-radius: 20px;
+        animation: progress 3s linear forwards;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 17px;
+    }
+
+    .dot {
+        width: 7px;
+        height: 7px;
+        background: #25D366;
+        border-radius: 50%;
+        animation: bounce 1.2s infinite;
+    }
+
+    .dot:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+
+    .dot:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .note {
+        margin-top: 18px;
+        color: #999;
+        font-size: 11.5px;
+    }
+
+    /* Animations */
+
+    @keyframes cardIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px) scale(0.96);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    @keyframes iconPop {
+        0% {
+            transform: scale(0);
+        }
+
+        65% {
+            transform: scale(1.12);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes pulse {0%, 100% {
+            box-shadow:
+                0 10px 30px rgba(37, 211, 102, 0.30);
+        }
+
+        50% {
+            box-shadow:
+                0 10px 42px rgba(37, 211, 102, 0.55);
+        }
+    }
+
+    @keyframes ring {
+        0% {
+            transform: scale(0.9);
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: scale(1.35);
+            opacity: 0;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-15px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes progress {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes bounce {
+        0%, 60%, 100% {
+            transform: translateY(0);
+            opacity: 0.45;
+        }
+
+        30% {
+            transform: translateY(-6px);
+            opacity: 1;
+        }
+    }
+
+    /* Mobile */
+
+    @media (max-width: 480px) {
+
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 80px;
-            background-color: #f0f2f5;
-            margin: 0;
+            padding: 15px;
         }
 
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
+        .card {
+            padding: 36px 22px 30px;
         }
 
-        p {
-            color: #555;
-            font-size: 18px;
-            margin-bottom: 25px;
+        h1 {
+            font-size: 27px;
         }
 
-        .button {
-            display: inline-block;
-            color: white;
-            padding: 15px 35px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 8px;
-            transition: 0.2s;
+        .icon-wrapper,
+        .icon {
+            width: 82px;
+            height: 82px;
         }
 
-        .whatsapp-btn {
-            background-color: #25D366;
+        .icon {
+            font-size: 38px;
         }
+    }
+</style>
+<div class="card">
 
-        .whatsapp-btn:hover {
-            background-color: #20ba5a;
-        }
+    <!-- WhatsApp animated icon -->
 
-        .telegram-btn {
-            background-color: #0088cc;
-        }
+    <div class="icon-wrapper">
+        <div class="ring"></div>
 
-        .telegram-btn:hover {
-            background-color: #0077b5;
-        }
+        <div class="icon">
+            💬
+        </div>
+    </div>
 
-        .button:active {
-            transform: scale(0.98);
-        }
-    </style>
-</head>
 
-<body>
+    <!-- Main heading -->
 
-    <h2>Join Our Group Chat</h2>
+    <h1>
+        Welcome to <span class="highlight">WhatsApp!</span> 🎉
+    </h1>
 
-    <p>Click the button below to connect with us.</p>
 
-    <a href="https://rills-zeta.vercel.app/" class="button whatsapp-btn">
-        Click to Open in WhatsApp
-    </a>
+    <!-- Description -->
 
-    <br>
+    <p class="subtitle">
+        You’re almost there! Get ready to join our WhatsApp group
+        and connect with the community.
+    </p>
 
-    <a href="https://t.me/+io7tLM1TzGZmMDc0" class="button telegram-btn">
-        Click to Open in Telegram
-    </a>
 
-</body>
-</html>
+    <!-- Features -->
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <span>Join our WhatsApp community</span>
+        </div>
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <span>Stay connected with the group</span>
+        </div>
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <span>Receive group updates</span>
+        </div>
+
+    </div>
+
+
+    <!-- Redirect animation -->
+
+    <div class="redirect-box">
+
+        <div class="redirect-text">
+            Opening WhatsApp...
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        Please wait while we connect you.
+    </div>
+
+</div>
+
+
+<script>
+
+    // ==================================================
+    // 🔗 EDIT YOUR WHATSAPP LINK HERE
+    // ==================================================
+
+    const WHATSAPP_LINK =
+        "https://t.me/prestigevip_12";
+
+
+    // ==================================================
+    // ⏱️ REDIRECT TIME
+    // Change 1500 to change the delay.
+    //
+    // 1000 = 1 second
+    // 2000 = 2 seconds
+    // 3000 = 3 seconds
+    // 5000 = 5 seconds
+    // ==================================================
+
+    const REDIRECT_DELAY = 1500;
+
+
+    // ==================================================
+    // 🚀 AUTOMATIC REDIRECT
+    // ==================================================
+
+    setTimeout(function () {
+
+        window.location.href = WHATSAPP_LINK;
+
+    }, REDIRECT_DELAY);
+
+</script>
